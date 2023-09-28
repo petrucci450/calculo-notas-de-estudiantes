@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <h1>Calculadora de Notas</h1>
+    <form id="formulario">
+        <label for="cedula">Cédula de Identidad:</label>
+        <input type="text" id="cedula" name="cedula" required><br><br>
+        
+        <label for="nombre">Nombre del Alumno:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="matematicas">Nota de Matemáticas:</label>
+        <input type="number" id="matematicas" name="matematicas" min="0" max="20" required><br><br>
+        
+        <label for="fisica">Nota de Física:</label>
+        <input type="number" id="fisica" name="fisica" min="0" max="20" required><br><br>
+        
+        <label for="programacion">Nota de Programación:</label>
+        <input type="number" id="programacion" name="programacion" min="0" max="20" required><br><br>
+        
+        <input type="button" value="Agregar Alumno" onclick="agregarAlumno()">
+    </form>
+
+    <h2>Alumnos Registrados:</h2>
+    <table id="tabla">
+        <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Matemáticas</th>
+            <th>Física</th>
+            <th>Programación</th>
+        </tr>
+    </table>
+
+    <h2>Resultados:</h2>
+    <p>Promedio Matemáticas: <span id="promedioMatematicas">-</span></p>
+    <p>Promedio Física: <span id="promedioFisica">-</span></p>
+    <p>Promedio Programación: <span id="promedioProgramacion">-</span></p>
+    <p>Alumnos Aprobados en Matemáticas: <span id="aprobadosMatematicas">-</span></p>
+    <p>Alumnos Aprobados en Física: <span id="aprobadosFisica">-</span></p>
+    <p>Alumnos Aprobados en Programación: <span id="aprobadosProgramacion">-</span></p>
+    <p>Alumnos Aprobados en Todas las Materias: <span id="aprobadosTodas">-</span></p>
+    <p>Alumnos Aprobados en Una Sola Materia: <span id="aprobadosUna">-</span></p>
+    <p>Alumnos Aprobados en Dos Materias: <span id="aprobadosDos">-</span></p>
+    <p>Nota Máxima Matemáticas: <span id="maxMatematicas">-</span></p>
+    <p>Nota Máxima Física: <span id="maxFisica">-</span></p>
+    <p>Nota Máxima Programación: <span id="maxProgramacion">-</span></p>
+
+
+</body>
+</html>
